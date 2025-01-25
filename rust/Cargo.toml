@@ -1,7 +1,7 @@
 [package]
 name = "smoltoken"
 description = "A fast library for Byte Pair Encoding (BPE) tokenization."
-version = "0.1.1-rc.3"
+version = "0.1.1-rc.5"
 edition = "2021"
 authors = ["Arun S V <svarunid@gmail.com>"]
 license-file = "../LICENSE"
@@ -10,7 +10,10 @@ repository = "https://github.com/svarunid/smoltoken/rust"
 readme = "../README.md"
 keywords = ["tokenizer", "bpe", "ai"]
 categories = ["encoding", "text-processing"]
+exclude = ["src/bin/*"]
 
 [dependencies]
 fancy-regex = "0.14.0"
+kdam = "0.6.2"
+rayon = "1.10.0"
 rustc-hash = "2.0.0"
